@@ -1,0 +1,33 @@
+Habit Tracker BackEnd Code
+Author: Garv Gursahaney
+
+Overview:
+This backend code is designed to support a Habit Tracker application
+I used SQLite to create a database that stores all User Data and Habits (New & Completed)
+
+Setup
+Access to the database:
+   The code establishes a connection with a SQLite database called ('habit_tracker_backend.db')
+   The database consists of three tables. These are users, habits and completed habits
+
+Classes:
+   User Class: Represents a user with methods for managing habits and retrieving user-specific data
+   Habit Tracker: Facilitates user and habit management in the context of the Habit Tracker
+   Habit: Represents a habit with methods for completion tracking and habit analysis
+
+Usage:
+Creating predefined habits: The 'create_predefined_habits()' function shows how to set up predefined habits for a demo user. It can be adjusted to include behaviors of actual users.
+
+The 'complete_habit' method in the 'HabitTracker' class marks a habit as finished for a given user.
+
+To analyze a user's habits, utilize the 'get_longest_streak' method in the 'HabitTracker' class.
+
+User Management: - The 'add_user' method of the 'HabitTracker' class adds new users to the system.
+
+Database Connection Closing: - The program will automatically close the database connection upon departure.
+
+The code includes error handling to deal with any potential issues with class management in the database.
+
+To use this code,
+
+Install libraries sqlite3 and have python version 3.7 or later.
